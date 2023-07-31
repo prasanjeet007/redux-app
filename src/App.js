@@ -1,11 +1,12 @@
 import "./App.css";
-import User from "./User";
+import Header from "./components/Header";
+import HomeContainer from "./containers/HomeContainer";
 
 function App() {
   return (
     <div className="App">
-      <h1>App Component</h1>
-      <User data={{ name: "Prasanjeet Chatterjee" }} />
+      <Header />
+      <HomeContainer />
     </div>
   );
 }
