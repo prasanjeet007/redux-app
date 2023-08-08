@@ -1,5 +1,5 @@
 import React from "react";
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <h1>Home Component</h1>
@@ -12,7 +12,13 @@ export default function Home() {
           <span>Price: $1000.00</span>
         </div>
         <div className="btn-wrapper item">
-          <button>Add To Cart</button>
+          <button
+            onClick={() => {
+              props.addToCartHandler({ pice: 1000, name: "i phone 11" });
+            }}
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     </div>
