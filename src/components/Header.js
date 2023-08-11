@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className="add-to-cart">
       <span className="cart-count"></span>

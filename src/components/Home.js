@@ -19,6 +19,14 @@ export default function Home(props) {
           >
             Add To Cart
           </button>
+          <button
+            className="remove-btn"
+            onClick={() => {
+              props.removeToCartHandler();
+            }}
+          >
+            Remove To Cart
+          </button>
         </div>
       </div>
     </div>
